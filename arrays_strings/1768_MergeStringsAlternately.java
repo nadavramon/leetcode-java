@@ -36,7 +36,7 @@ Constraints:
 word1 and word2 consist of lowercase English letters.
  */
 
-class Solution {
+class 1768_MergeStringsAlternately {
     public String mergeAlternately(String word1, String word2) {
         int m = word1.length();
         int n = word2.length();

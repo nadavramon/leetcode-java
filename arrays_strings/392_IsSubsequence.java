@@ -26,7 +26,7 @@ and you want to check one by one to see if t has its subsequence.
 In this scenario, how would you change your code?
  */
 
-class Solution {
+class 392_IsSubsequence {
     public boolean isSubsequence(String s, String t) {
         return isSubsequence(s, t, 0, 0);
     }
