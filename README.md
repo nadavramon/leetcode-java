@@ -18,8 +18,8 @@ leetcode-java/
 Use your favorite IDE (IntelliJ recommended) or compile via terminal:
 
 ```bash
-javac arrays/TwoSum.java
-java arrays.TwoSum
+javac arrays/1_TwoSum.java
+java arrays.1_TwoSum
 ```
 
 ---
