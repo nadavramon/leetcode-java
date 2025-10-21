@@ -29,7 +29,7 @@ Only one valid answer exists.
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
  */
 
-public class 1_TwoSum {
+public class TwoSum_1 {
     public static int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
@@ -42,7 +42,7 @@ public class 1_TwoSum {
     }
 
     public static void main(String[] args) {
-        int[] result = 1_TwoSum(new int[]{2, 7, 11, 15}, 9);
+        int[] result = TwoSum_1.twoSum(new int[]{2, 7, 11, 15}, 9);
         System.out.println("[" + result[0] + ", " + result[1] + "]");
     }
 }
