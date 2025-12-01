@@ -36,6 +36,8 @@ Constraints:
 word1 and word2 consist of lowercase English letters.
  */
 
+package arrays_strings;
+
 class MergeStringsAlternately_1768 {
     public String mergeAlternately(String word1, String word2) {
         int m = word1.length();
@@ -44,9 +46,9 @@ class MergeStringsAlternately_1768 {
         char[] result = new char[m + n];
         int i = 0, k = 0, j = 0;
         /*
-        i - counter for word1 current index.
-        j - counter for word2 current index.
-        k - counter for the result array current index.
+         * i - counter for word1 current index.
+         * j - counter for word2 current index.
+         * k - counter for the result array current index.
          */
 
         while (i < m && j < n) {

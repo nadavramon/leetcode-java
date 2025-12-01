@@ -21,10 +21,10 @@ Constraints:
 strs[i] consists of only lowercase English letters if it is non-empty.
  */
 
-
+package arrays_strings;
 
 public class LongestCommonPrefix_14 {
-    public String longestCommonPrefix (String[]strs){
+    public String longestCommonPrefix(String[] strs) {
         String commonPrefix = strs[0];
 
         if (strs.length < 2) {
@@ -41,9 +41,8 @@ public class LongestCommonPrefix_14 {
     }
 
     public static void main(String[] args) {
-        String[] strs = {"flower", "flow", "flight"};
+        String[] strs = { "flower", "flow", "flight" };
         LongestCommonPrefix_14 obj = new LongestCommonPrefix_14();
         System.out.println(obj.longestCommonPrefix(strs));
     }
 }
-

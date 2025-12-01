@@ -1,3 +1,5 @@
+package arrays_strings;
+
 import java.util.Stack;
 
 /*
@@ -46,8 +48,7 @@ public class ValidParentheses_20 {
             char currChar = s.charAt(i);
             if (currChar == '(' || currChar == '{' || currChar == '[') {
                 parentheses.push(currChar);
-            }
-            else {
+            } else {
                 if (parentheses.isEmpty())
                     return false;
 
@@ -70,5 +71,3 @@ public class ValidParentheses_20 {
         System.out.println(validP.isValid("()[]"));
     }
 }
-
-

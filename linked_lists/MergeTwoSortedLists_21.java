@@ -2,7 +2,8 @@
  * 21. Merge Two Sorted Lists
  *
  * You are given the heads of two sorted linked lists list1 and list2.
- * Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+ * Merge the two lists into one sorted list. The list should be made by splicing
+ * together the nodes of the first two lists.
  * Return the head of the merged linked list.
  *
  * Example 1:
@@ -25,31 +26,38 @@
  * ====================================================================================================
  *
  * CHAIN OF THOUGHT:
- * 1. We have two sorted linked lists, and we want to merge them into a single sorted linked list.
- * 2. Since both lists are already sorted, we can iterate through both of them simultaneously.
- * 3. We can maintain a pointer for each list (let's say l1 and l2) and compare their values.
- * 4. We'll need a new head for our merged list. To simplify edge cases (like initializing the head),
- *    we can use a "dummy" node. The real result will start at dummy.next.
+ * 1. We have two sorted linked lists, and we want to merge them into a single
+ * sorted linked list.
+ * 2. Since both lists are already sorted, we can iterate through both of them
+ * simultaneously.
+ * 3. We can maintain a pointer for each list (let's say l1 and l2) and compare
+ * their values.
+ * 4. We'll need a new head for our merged list. To simplify edge cases (like
+ * initializing the head),
+ * we can use a "dummy" node. The real result will start at dummy.next.
  * 5. In each step of the loop:
- *    - Compare l1.val and l2.val.
- *    - If l1.val is smaller, attach l1 to our merged list and move l1 forward.
- *    - If l2.val is smaller (or equal), attach l2 to our merged list and move l2 forward.
- *    - Move the tail of our merged list forward.
- * 6. Once one of the lists is exhausted (becomes null), we simply attach the remainder of the other list
- *    to the end of our merged list (since the rest is already sorted).
+ * - Compare l1.val and l2.val.
+ * - If l1.val is smaller, attach l1 to our merged list and move l1 forward.
+ * - If l2.val is smaller (or equal), attach l2 to our merged list and move l2
+ * forward.
+ * - Move the tail of our merged list forward.
+ * 6. Once one of the lists is exhausted (becomes null), we simply attach the
+ * remainder of the other list
+ * to the end of our merged list (since the rest is already sorted).
  * 7. Finally, return dummy.next.
  *
  * COMPLEXITY ANALYSIS:
  * - Time Complexity: O(n + m)
- *   We iterate through both lists exactly once, where n and m are the lengths of the two lists.
+ * We iterate through both lists exactly once, where n and m are the lengths of
+ * the two lists.
  * - Space Complexity: O(1)
- *   We are only using a few pointers (dummy, tail, l1, l2) and not allocating any new nodes (in-place merge).
- *   This is more efficient than the recursive approach which uses O(n + m) stack space.
+ * We are only using a few pointers (dummy, tail, l1, l2) and not allocating any
+ * new nodes (in-place merge).
+ * This is more efficient than the recursive approach which uses O(n + m) stack
+ * space.
  *
  * ====================================================================================================
  */
-
-package linked_lists;
 
 public class MergeTwoSortedLists_21 {
 

@@ -1,5 +1,5 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+package arrays_strings;
+
 import java.util.Arrays;
 
 /*
@@ -55,7 +55,7 @@ public class PlusOne_66 {
     }
 
     public static void main(String[] args) {
-        int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        int[] arr = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
         PlusOne_66 plusOne = new PlusOne_66();
         System.out.println(Arrays.toString(plusOne.plusOne(arr)));
     }
