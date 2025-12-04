@@ -63,6 +63,23 @@ package linked_lists;
 
 public class MergeTwoSortedLists_21 {
 
+    public class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}
+
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         // Create a dummy node to serve as the start of the merged list.
         // This simplifies the code by avoiding special checks for the head of the new
