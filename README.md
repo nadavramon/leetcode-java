@@ -24,10 +24,12 @@ graph TD
     Arrays --> TwoSum[TwoSum_1.java]
     Arrays --> ValidP[ValidParentheses_20.java]
     LinkedLists --> MergeLists[MergeTwoSortedLists_21.java]
+    Graphs --> SameTree[SameTree_100.java]
     
     style Root fill:#f9f,stroke:#333,stroke-width:2px
     style Arrays fill:#bbf,stroke:#333,stroke-width:1px
     style LinkedLists fill:#bbf,stroke:#333,stroke-width:1px
+    style Graphs fill:#bbf,stroke:#333,stroke-width:1px
 ```
 
 ## 🧠 Solution Philosophy
@@ -44,13 +46,15 @@ Every solution file follows a strict structure to ensure maximum understandabili
 
 | # | Problem | Difficulty | Topic | Solution |
 |---|---|---|---|---|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Arrays & HashMaps | [Java](arrays_strings/TwoSum_1.java) |
-| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | Strings | [Java](arrays_strings/LongestCommonPrefix_14.java) |
-| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | Stacks/Strings | [Java](arrays_strings/ValidParentheses_20.java) |
-| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked Lists | [Java](linked_lists/MergeTwoSortedLists_21.java) |
-| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | Arrays | [Java](arrays_strings/PlusOne_66.java) |
-| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | Strings/Two Pointers | [Java](arrays_strings/IsSubsequence_392.java) |
-| 1768 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | Easy | Strings | [Java](arrays_strings/MergeStringsAlternately_1768.java) |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Arrays & HashMaps | [Java](src/arrays_strings/TwoSum_1.java) |
+| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | Strings | [Java](src/arrays_strings/LongestCommonPrefix_14.java) |
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | Stacks/Strings | [Java](src/arrays_strings/ValidParentheses_20.java) |
+| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked Lists | [Java](src/linked_lists/MergeTwoSortedLists_21.java) |
+| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | Arrays | [Java](src/arrays_strings/PlusOne_66.java) |
+| 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | Easy | Strings/Math | [Java](src/arrays_strings/AddBinary_67.java) |
+| 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | Graphs/Trees | [Java](src/graphs/SameTree_100.java) |
+| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | Strings/Two Pointers | [Java](src/arrays_strings/IsSubsequence_392.java) |
+| 1768 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | Easy | Strings | [Java](src/arrays_strings/MergeStringsAlternately_1768.java) |
 
 ## 🏃 How to Run
 
@@ -58,8 +62,8 @@ You can run any solution directly from the command line or your IDE.
 
 **Example:**
 ```bash
-javac arrays_strings/TwoSum_1.java
-java arrays_strings.TwoSum_1
+javac src/arrays_strings/TwoSum_1.java
+java -cp src arrays_strings.TwoSum_1
 ```
 
 ---
